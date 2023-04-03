@@ -74,7 +74,6 @@ header .top .right li a span {
 }
 header .top .all_nav {
   display: block;
-  background: lime;
   position: fixed;
   left: 50%;
   top: 50%;
@@ -127,4 +126,32 @@ header .top .all_nav .close {
 .btm nav > ul > li .sub li a {
   padding: 10px;
   display: block;
+}
+
+main #right_popup {
+  background: aqua;
+  display: flex;
+  flex-flow: column wrap;
+  width: 400px;
+  height: 1000px;
+  position: absolute;
+  z-index: 999;
+  right: 0;
+  top: 0;
+  position: fixed;
+}
+main #right_popup #popup_btn {
+  display: flex;
+  flex-flow: column nowrap;
+  position: absolute;
+  top: 600px;
+  left: -20px;
+  background: #fff;
+}
+main #right_popup #popup_btn a {
+  width: 20px;
+  height: 20px;
+}
+main #right_popup #popup_btn a img {
+  border: #000;
 }/*# sourceMappingURL=main.css.map */

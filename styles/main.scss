@@ -58,7 +58,7 @@ header {width:1200px; margin:0 auto;
                 }
             }
     .all_nav {
-            display: block; background: lime;
+            display: block;
             position: fixed; left: 50%; top:50%;
             width:700px; height:500px;z-index: 999;
             transform: translate(-50%,-50%);
@@ -95,3 +95,22 @@ header {width:1200px; margin:0 auto;
         }
         }
     }
+main{
+    #right_popup {background: aqua; display: flex; flex-flow: column wrap; width: 400px; height: 1000px; position: absolute; z-index: 999; right:0; top:0; position: fixed;
+        #popup_btn {display: flex; flex-flow: column nowrap; position: absolute;top: 600px;left:-20px; background: #fff; 
+            a {width:20px; height: 20px;
+                img { border: #000;}
+            }
+        }
+    }
+    #contents {
+        .info{img{}}
+        .info_contents {}
+        .user {a{}}
+        .board {a{}}
+        h2 {}
+        h2+p {img{}}
+        address {}
+        address+p{}
+    }
+}
