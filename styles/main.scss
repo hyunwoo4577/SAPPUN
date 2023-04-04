@@ -96,21 +96,42 @@ header {width:1200px; margin:0 auto;
         }
     }
 main{
-    #right_popup {background: aqua; display: flex; flex-flow: column wrap; width: 400px; height: 1000px; position: absolute; z-index: 999; right:0; top:0; position: fixed;
-        #popup_btn {display: flex; flex-flow: column nowrap; position: absolute;top: 600px;left:-20px; background: #fff; 
-            a {width:20px; height: 20px;
-                img { border: #000;}
+    #right_popup {position: fixed; right:0; top:0; display:flex; flex-flow: row nowrap;align-items: center;
+        #popup_btn {border: 1px solid $fontColor2; width:30px; display: flex; flex-flow: column nowrap; background: #fff;
+            a:nth-child(1) {background:$borderColor;}
+            a {border: 1px solid $fontColor2; text-align: center;
+                img {}
             }
         }
-    }
-    #contents {
-        .info{img{}}
-        .info_contents {}
-        .user {a{}}
-        .board {a{}}
-        h2 {}
-        h2+p {img{}}
-        address {}
-        address+p{}
+        .contents {text-align: center; height: 100vh; background:#fff ; width: 500px;
+            .info{img{
+                margin: 30px 0;}}
+            .info_contents {
+                color:$fontColor2;
+                line-height:1.2;}
+            .user 
+            {display: flex; flex-flow: row wrap; text-align:left; margin: 30px 0;
+                a{width: 45%; margin:0 1px 0px 15px; padding: 5px;
+                    border-bottom:1px solid $fontColor2 ;
+                    span{}
+            }}
+            .board {
+                display: flex; flex-flow:row wrap; text-align:left;
+                a{width: 45%; margin:0 1px 0px 15px; padding: 5px;
+                    border-bottom:1px solid #ccc ; }}
+            h2 {
+                text-align: left; font-weight: 600; margin: 40px 0 20px 15px ;
+            }
+            h2+p {
+                width: 150px; margin-left: 20px;
+                img{width:100%}
+            }
+            address {
+                text-align: left; margin: 0 0 16px 16px; font-size: 2rem;
+            }
+            address+p{
+                text-align: left; margin-left: 16px; line-height: 1.2rem;
+            }
+        }
     }
 }

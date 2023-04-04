@@ -129,29 +129,82 @@ header .top .all_nav .close {
 }
 
 main #right_popup {
-  background: aqua;
-  display: flex;
-  flex-flow: column wrap;
-  width: 400px;
-  height: 1000px;
-  position: absolute;
-  z-index: 999;
+  position: fixed;
   right: 0;
   top: 0;
-  position: fixed;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
 }
 main #right_popup #popup_btn {
+  border: 1px solid #aaa;
+  width: 30px;
   display: flex;
   flex-flow: column nowrap;
-  position: absolute;
-  top: 600px;
-  left: -20px;
   background: #fff;
 }
-main #right_popup #popup_btn a {
-  width: 20px;
-  height: 20px;
+main #right_popup #popup_btn a:nth-child(1) {
+  background: #ff7f50;
 }
-main #right_popup #popup_btn a img {
-  border: #000;
+main #right_popup #popup_btn a {
+  border: 1px solid #aaa;
+  text-align: center;
+}
+main #right_popup .contents {
+  text-align: center;
+  height: 100vh;
+  background: #fff;
+  width: 500px;
+}
+main #right_popup .contents .info img {
+  margin: 30px 0;
+}
+main #right_popup .contents .info_contents {
+  color: #aaa;
+  line-height: 1.2;
+}
+main #right_popup .contents .user {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: left;
+  margin: 30px 0;
+}
+main #right_popup .contents .user a {
+  width: 45%;
+  margin: 0 1px 0px 15px;
+  padding: 5px;
+  border-bottom: 1px solid #aaa;
+}
+main #right_popup .contents .board {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: left;
+}
+main #right_popup .contents .board a {
+  width: 45%;
+  margin: 0 1px 0px 15px;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+main #right_popup .contents h2 {
+  text-align: left;
+  font-weight: 600;
+  margin: 40px 0 20px 15px;
+}
+main #right_popup .contents h2 + p {
+  width: 150px;
+  margin-left: 20px;
+}
+main #right_popup .contents h2 + p img {
+  width: 100%;
+}
+main #right_popup .contents address {
+  text-align: left;
+  margin: 0 0 16px 16px;
+  font-size: 2rem;
+}
+main #right_popup .contents address + p {
+  text-align: left;
+  margin-left: 16px;
+  line-height: 1.2rem;
 }/*# sourceMappingURL=main.css.map */
