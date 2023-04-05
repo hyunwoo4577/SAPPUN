@@ -95,7 +95,7 @@ header {width:1200px; margin:0 auto;
         }
         }
     }
-main{
+main{text-align: center;
     #right_popup {position: fixed; right:0; top:0; display:flex; flex-flow: row nowrap;align-items: center;
         #popup_btn {border: 1px solid $fontColor2; width:30px; display: flex; flex-flow: column nowrap; background: #fff;
             a:nth-child(1) {background:$borderColor;}
@@ -134,4 +134,44 @@ main{
             }
         }
     }
-}
+    .visual{
+        img {}
+    }
+    .event_bnr {
+        display:grid; grid-template-columns: repeat(3,1fr); justify-content: center; margin: 50px 150px 80px 150px;
+            a{
+                img{}}}
+    .weekly_best{
+        width: 1200px; margin: 0 auto;
+            h2:first-child {font-weight: 600; text-transform: uppercase; margin-bottom:100px;}
+            .product{display: grid; grid-template-columns: repeat(3,1fr); 
+                li{margin-right: 13px; margin-bottom: 50px;
+                    .photo{
+                        img{}}
+                    h2 {text-align: left;
+                        font-size: 0.8rem; margin: 10px 0px 5px 0px; 
+                    }
+                    .price {text-align: left; font-weight: 500; border-bottom:1px solid #ccc; padding-bottom: 30px ;}
+                    .btm{text-align: left;
+                        .size { font-size: 0.8rem;}
+                    }
+                    .btm {position: relative;
+                        .size {margin: 10px 0;}
+                        .review {color:$borderColor; position: absolute; right:0; top:0px; font-size: 0.75rem;}
+                        p {.best {background:bisque; font-size:0.8rem; color:#fff; padding:3px 3px;} 
+                            .order {background:navy; font-size:0.8rem; color:#fff; padding:3px 3px;}
+                        }
+                    }
+                }}
+        }}
+footer {position: relative;
+    .shop_now { position:absolute; top: 80px; left: 45%; text-align: center;
+        h2 {font-size: 2.5rem; text-transform: uppercase; font-weight: 600; color:#fff;margin-bottom: 20px;}
+        a {border:1px solid #fff; padding:5px 10px; color: #fff;}
+    }
+    .ft_top {background:url(../images/made_img.jpg); height: 250px; margin-bottom: 30px;
+    }
+    .ft_btm {width: 1200px; margin: 0 auto;
+        a {font-size: 0.75rem; margin-right: 40px;}
+        address {margin: 50px 0;font-size: 0.75rem;}
+    }}
