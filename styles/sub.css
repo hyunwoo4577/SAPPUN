@@ -1,1 +1,135 @@
-/*# sourceMappingURL=sub.css.map */
+main {
+  width: 1200px;
+  margin: 0 auto;
+  background: aqua;
+  display: flex;
+  flex-flow: row nowrap;
+}
+main .container {
+  background: yellow;
+  width: calc(100% - 380px);
+}
+main .container .product_big img {
+  width: 100%;
+}
+main .container h2 {
+  text-align: center;
+  font-size: 0.75rem;
+  margin: 30px 0;
+}
+main .container .ai {
+  width: calc(100% - 380px);
+  display: flex;
+  flex-flow: row wrap;
+}
+main .container .ai a h3 {
+  font-size: 0.75rem;
+}
+aside {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 380px;
+  height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  margin-left: 0 30px;
+}
+aside .like img {
+  margin: 20px 0;
+}
+
+h1 {
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+dl dt {
+  text-align: left;
+}
+dl dd {
+  text-align: right;
+  position: relative;
+  top: -15px;
+}
+dl dd #color_select {
+  border: 1px solid #aaa;
+  width: 220px;
+  height: 38px;
+  padding-left: 20px;
+}
+dl dd #heel_select {
+  border: 1px solid #aaa;
+  width: 220px;
+  height: 38px;
+  padding-left: 20px;
+}
+dl dd #size_select {
+  border: 1px solid #aaa;
+  width: 220px;
+  height: 38px;
+  padding-left: 20px;
+}
+dl .order .price_wrap h2 {
+  color: #ff7f50;
+  font-size: 1.3rem;
+  margin: 20px 0;
+}
+dl .order .price_wrap p {
+  text-align: right;
+  position: relative;
+  top: -40px;
+  font-size: 1.3rem;
+  color: #ff7f50;
+}
+dl .order .price_wrap p .price {
+  font-size: 1.3rem;
+  color: #ff7f50;
+}
+dl .order .aside_box {
+  display: flex;
+  flex-flow: column nowrap;
+}
+dl .order .aside_box a:first-child {
+  position: relative;
+  width: 350px;
+  height: 50px;
+  background: #ff7f50;
+  text-align: center;
+  padding: 15px 0;
+  color: #fff;
+}
+dl .order .aside_box a:nth-child(2) {
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 15px;
+  width: 160px;
+  height: 50px;
+  border: 1px solid #ff7f50;
+  color: #ff7f50;
+}
+dl .order .aside_box a:nth-child(3) {
+  position: absolute;
+  left: 210px;
+  bottom: 388px;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 15px;
+  width: 160px;
+  height: 50px;
+  border: 1px solid #ff7f50;
+}
+dl .order .review {
+  border: 1px dashed #aaa;
+  padding: 15px;
+  margin-top: 10px;
+}
+dl .order .review p:first-child {
+  font-size: 0.75rem;
+  color: #aaa;
+  margin-bottom: 8px;
+}
+dl .order .review p:nth-child(2) {
+  text-align: right;
+}/*# sourceMappingURL=sub.css.map */

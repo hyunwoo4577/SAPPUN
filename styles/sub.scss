@@ -1,2 +1,88 @@
-.container {p{img{}}
-.container_slide {}}
+//변수
+$wh:#fff;
+$borderColor:#ff7f50;
+$fontColor:#222222;
+$fontColor2:#aaa;
+$bgColor:#eee;
+$bestColor:#ffE4c4;
+$orderColor:#000080;
+$order_bar:#ff69b4;
+//전체 w 1200px
+//주문영역 w 380px
+main{width:1200px; margin: 0 auto; background: aqua;
+    display: flex;
+    flex-flow:row nowrap;
+
+    .container {background:yellow;
+        width:calc(100% - 380px);
+        .product_big {img{width: 100%;}}
+        h2{
+            text-align: center; font-size: 0.75rem; margin: 30px 0;
+        }
+            .ai {width:calc(100% - 380px);
+                display: flex;
+                flex-flow:row wrap;
+                a {
+                    p{
+                    img{}}
+                    h3{font-size: 0.75rem;}
+                    p{em{}}
+                }
+            }
+        }
+    }
+    aside {
+        display: flex;
+        flex-flow:column nowrap;
+        width:380px;
+        height: 100vh;
+        position:sticky;top:0;padding:20px; margin-left: 0 30px;
+        .like {img{margin:20px 0}}
+        }
+        h1 {font-weight: 500; margin-bottom: 30px;}
+        dl {
+            dt {text-align: left;}
+            dd {text-align: right;position: relative;top:-15px;
+                #color_select {border:1px solid $fontColor2;
+                width:220px;
+                height:38px;
+                padding-left: 20px;}
+                #heel_select {border:1px solid $fontColor2;
+                width:220px;
+                height:38px;
+                padding-left: 20px;}
+                #size_select {border:1px solid $fontColor2;
+                width:220px;
+                height:38px;
+                padding-left: 20px;}
+                }
+            .order {
+                .price_wrap {
+                    h2 {color:$borderColor; font-size: 1.3rem;
+                    margin: 20px 0;}
+                    p {text-align: right; position: relative; top: -40px; font-size: 1.3rem;color:$borderColor;.price {font-size: 1.3rem;color:$borderColor;}}
+                }
+                    
+                    
+                .aside_box {display: flex; flex-flow: column nowrap; 
+                    a:first-child {position:relative;width:350px; height: 50px; background: $borderColor; text-align: center;padding:15px 0;color: $wh;}
+                    a:nth-child(2) {
+                        text-align: center;
+                        margin-top: 10px;
+                        padding-top:15px;
+                        width: 160px;
+                        height: 50px;
+                        border:1px solid $borderColor;
+                        color:$borderColor;}
+                    a:nth-child(3) {
+                        position: absolute; left:210px; bottom:388px; 
+                        text-align: center;
+                        margin-top: 10px;
+                        padding-top:15px;
+                        width: 160px;
+                        height: 50px;
+                        border:1px solid $borderColor;}}
+            .review {border: 1px dashed $fontColor2; padding: 15px; margin-top: 10px;
+            p:first-child{font-size: 0.75rem;color:$fontColor2;margin-bottom: 8px;}
+            p:nth-child(2) {text-align: right;}}   
+            }}
